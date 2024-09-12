@@ -1,3 +1,5 @@
+HMLS 2
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -7,15 +9,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header style="background-image: url('images/F78FB6B5-491D-441C-95F7-4701EFD773CC.jpeg'); background-size: cover; background-position: center;">
+    <!-- Hamburger-Menü -->
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <!-- Drei horizontale Linien -->
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu" id="menu">
+            <p>Du findest mich in den Pausen auf dem Schulhof bei der Pausenausleihe oder im Klassenraum Nummer 156.</p>
+        </div>
+    </div>
+
+    <!-- Header mit Hintergrundbild -->
+    <header style="background-image: url('images/525B783A-BF72-4340-B0C2-319E4E23F002.webp'); background-size: cover; background-position: center;">
         <div class="logo">B.A.</div>
-        <h1>Willkommen auf meiner Kandidatenseite</h1>
+
+        <!-- Profilbild oben links -->
+        <div class="profile-image">
+            <img src="images/525B783A-BF72-4340-B0C2-319E4E23F002.webp" alt="Bene Albo Profilbild">
+        </div>
+
+        <h1 style="color: #ffcc00;">Willkommen auf meiner Kandidatenseite</h1>
         <h2>Bene Albo – Kandidat für Schulsprecher</h2>
     </header>
     
     <section class="about-me">
         <h3>Über mich</h3>
-        <p>Hallo! Mein Name ist <strong>Bene Albo, 06</strong>, geboren am 12.04.2008, und ich bewerbe mich als euer nächster Schulsprecher. Warum ich das mache? Ganz einfach: Ich will eure Wünsche erfüllen und das Schulleben für uns alle besser gestalten!</p>
+        <p>Hallo! Mein Name ist <strong>Bene Albo, 06</strong>, geboren am 12.04.2008, und ich bewerbe mich als euer nächster Schulsprecher. Warum ich das mache? Ganz einfach: Ich will eure Wünsche erfüllen und das Schulleben für uns alle besser gestalten! Ich gehe in die Klasse <strong>10b</strong>.</p>
     </section>
     
     <section class="my-goals">
@@ -25,10 +47,10 @@
             <li><strong>Saubere Toiletten:</strong> Ich sorge dafür, dass unsere Toiletten regelmäßig und gründlich gereinigt werden.</li>
             <li><strong>Die alte Cafeteria:</strong> Auch die 9. Klasse soll Zugang zur Cafeteria haben!</li>
             <li><strong>Mehr Schul-Events:</strong> Besuche bei Basketball- oder Fußballspielen, mehr Konzerte und coole Schulfeste!</li>
-            <li><strong>Sommerpass:</strong> Mit einem Sommerpass organisieren wir besondere Sommeraktionen und Events.</li>
+            <li><strong>Sommerbasar:</strong> Mit einem Sommerbasar organisieren wir besondere Sommeraktionen und Events.</li>
         </ul>
     </section>
-    
+
     <!-- Kontakt Button -->
     <section class="contact">
         <h3>Kontakt</h3>
@@ -39,5 +61,12 @@
         <h4>Wählt Bene Albo</h4>
         <p>Gemeinsam machen wir unsere Schule zu einem noch besseren Ort!</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>
