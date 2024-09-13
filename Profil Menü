@@ -22,19 +22,6 @@
                 <li><a href="#goals">Ideen</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
-            <!-- Textinhalte für Menüabschnitte -->
-            <div id="about-info">
-                <h4>Über mich</h4>
-                <p>Ich bin Bene Albo, 16 Jahre alt, und gehe in die 10b. Ich bin sehr offen für alles und liebe es, neue Ideen zu entwickeln. Mein Hobby ist Fußball, und ich spiele sehr gerne Fußballspiele. Sport ist ein wichtiger Teil meines Lebens.</p>
-            </div>
-            <div id="goals-info">
-                <h4>Ideen</h4>
-                <p>Ich möchte folgende Ideen umsetzen: Mikrowellen und Wasserkocher in jedem Klassenraum, saubere Toiletten, die alte Cafeteria für die 9. Klasse öffnen und mehr Schul-Events organisieren. Ich werde mit den Schulleitern Absprachen treffen, um diese Ideen bis spätestens nach den Winterferien zu realisieren.</p>
-            </div>
-            <div id="contact-info">
-                <h4>Kontakt</h4>
-                <p>Du kannst mich per E-Mail unter <a href="mailto:beni.be012@hotmail.com">beni.be012@hotmail.com</a> erreichen oder mich in der Pausenausleihe auf dem Schulhof treffen.</p>
-            </div>
         </div>
     </div>
 
