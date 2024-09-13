@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bene Albo – Kandidatur für Schulsprecher</title>
+    <!-- Verlinkung der CSS-Datei -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hamburger-Menü -->
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <!-- Drei horizontale Linien -->
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#goals">Ideen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header mit Hintergrundbild -->
+    <header class="header-background">
+        <div class="logo">B.A.</div>
+
+        <!-- Profilbild oben links -->
+        <div class="profile-image">
+            <img src="images/525B783A-BF72-4340-B0C2-319E4E23F002.webp" alt="Bene Albo Profilbild">
+        </div>
+
+        <h1 style="color: #ffcc00;">Willkommen auf meiner Kandidatenseite</h1>
+        <h2>Bene Albo – Kandidat für Schulsprecher</h2>
+    </header>
+    
+    <section class="about-me" id="about">
+        <h3>Über mich</h3>
+        <p>Hallo! Mein Name ist <strong>Bene Albo, 06</strong>, geboren am 12.04.2008, und ich bewerbe mich als euer nächster Schulsprecher. Warum ich das mache? Ganz einfach: Ich will eure Wünsche erfüllen und das Schulleben für uns alle besser gestalten! Ich gehe in die Klasse <strong>10b</strong>.</p>
+    </section>
+    
+    <section class="my-goals" id="goals">
+        <h3>Meine Ideen für die Schule</h3>
+
+        <!-- Accordion für Mikrowellen und Wasserkocher -->
+        <div class="accordion">
+            <button class="accordion-button">Mikrowellen und Wasserkocher</button>
+            <div class="accordion-content">
+                <p>In jedem Klassenraum soll eine Mikrowelle und ein Wasserkocher stehen, damit wir unser Essen aufwärmen können und heiße Getränke zubereiten können.</p>
+            </div>
+        </div>
+
+        <!-- Accordion für saubere Toiletten -->
+        <div class="accordion">
+            <button class="accordion-button">Saubere Toiletten</button>
+            <div class="accordion-content">
+                <p>Ich sorge dafür, dass unsere Toiletten regelmäßig und gründlich gereinigt werden.</p>
+            </div>
+        </div>
+
+        <!-- Accordion für Cafeteria -->
+        <div class="accordion">
+            <button class="accordion-button">Die alte Cafeteria</button>
+            <div class="accordion-content">
+                <p>Auch die 9. Klasse soll Zugang zur Cafeteria haben!</p>
+            </div>
+        </div>
+
+        <!-- Accordion für Schul-Events -->
+        <div class="accordion">
+            <button class="accordion-button">Mehr Schul-Events</button>
+            <div class="accordion-content">
+                <p>Besuche bei Basketball- oder Fußballspielen, mehr Konzerte und coole Schulfeste!</p>
+            </div>
+        </div>
+
+        <!-- Accordion für Sommerbasar -->
+        <div class="accordion">
+            <button class="accordion-button">Sommerbasar</button>
+            <div class="accordion-content">
+                <p>Mit einem Sommerbasar organisieren wir besondere Sommeraktionen und Events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Button -->
+    <section class="contact" id="contact">
+        <h3>Kontakt</h3>
+        <a href="mailto:beni.be012@hotmail.com" class="contact-button">Schreib mir eine E-Mail</a>
+    </section>
+
+    <footer>
+        <h4>Wählt Bene Albo</h4>
+        <p>Gemeinsam machen wir unsere Schule zu einem noch besseren Ort!</p>
+    </footer>
+
+    <!-- JavaScript für das Hamburger-Menü und Accordion -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
